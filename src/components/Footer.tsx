@@ -118,9 +118,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
+        <div className="border-t border-gray-800 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
           <p>&copy; {new Date().getFullYear()} Foret Construction & Roofing LLC. All rights reserved.</p>
-          <p>Raceland, LA &middot; Serving Lafourche &amp; Terrebonne Parishes</p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy" className="hover:text-accent transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-gray-700">&middot;</span>
+            <p>Raceland, LA &middot; Serving Lafourche &amp; Terrebonne Parishes</p>
+          </div>
         </div>
       </div>
     </footer>
