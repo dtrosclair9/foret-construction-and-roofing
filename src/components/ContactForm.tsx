@@ -58,12 +58,13 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1.5">
-            Phone Number
+            Phone Number <span className="text-accent" aria-hidden="true">*</span>
           </label>
           <input
             id="phone"
             name="phone"
             type="tel"
+            required
             autoComplete="tel"
             className="w-full border border-gray-300 rounded px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition"
             placeholder="(985) 555-0100"
@@ -107,29 +108,33 @@ export default function ContactForm() {
           </select>
         </div>
         <div>
-          <label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-1.5">
-            Project Location (City)
+          <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-1.5">
+            Service Address <span className="text-accent" aria-hidden="true">*</span>
           </label>
           <input
-            id="city"
-            name="city"
+            id="address"
+            name="address"
             type="text"
+            required
+            autoComplete="street-address"
             className="w-full border border-gray-300 rounded px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition"
-            placeholder="Raceland, Houma, Thibodaux..."
+            placeholder="123 Main St, Raceland, LA 70394"
           />
         </div>
       </div>
 
       <div>
         <label htmlFor="referral_source" className="block text-sm font-medium text-gray-700 mb-1.5">
-          How did you find us?
+          How did you find us? <span className="text-accent" aria-hidden="true">*</span>
         </label>
         <select
           id="referral_source"
           name="referral_source"
+          required
+          defaultValue=""
           className="w-full border border-gray-300 rounded px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition bg-white"
         >
-          <option value="">Select an option...</option>
+          <option value="" disabled>Select an option...</option>
           <option>Google Search</option>
           <option>Google Local Services Ad</option>
           <option>Facebook / Social Media</option>
@@ -142,12 +147,11 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">
-          Tell Us About Your Project <span className="text-accent" aria-hidden="true">*</span>
+          Tell Us About Your Project
         </label>
         <textarea
           id="message"
           name="message"
-          required
           rows={5}
           className="w-full border border-gray-300 rounded px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition resize-y"
           placeholder="Describe your project, timeline, or any questions you have..."
