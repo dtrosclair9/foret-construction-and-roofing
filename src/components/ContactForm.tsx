@@ -4,8 +4,7 @@ import { useState } from 'react'
 
 type FormState = 'idle' | 'loading' | 'success' | 'error'
 
-// TODO before launch: create Formspree form, paste ID here, swap form recipient to foretcr@gmail.com
-const FORMSPREE_ID = 'FORMSPREE_ID_PLACEHOLDER'
+const FORMSPREE_ID = 'xlgzpkvd'
 
 export default function ContactForm() {
   const [status, setStatus] = useState<FormState>('idle')
@@ -119,6 +118,26 @@ export default function ContactForm() {
             placeholder="Raceland, Houma, Thibodaux..."
           />
         </div>
+      </div>
+
+      <div>
+        <label htmlFor="referral_source" className="block text-sm font-medium text-gray-700 mb-1.5">
+          How did you find us?
+        </label>
+        <select
+          id="referral_source"
+          name="referral_source"
+          className="w-full border border-gray-300 rounded px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition bg-white"
+        >
+          <option value="">Select an option...</option>
+          <option>Google Search</option>
+          <option>Google Local Services Ad</option>
+          <option>Facebook / Social Media</option>
+          <option>Friend or Family Referral</option>
+          <option>Drove By / Saw a Job Site</option>
+          <option>Yard Sign or Vehicle</option>
+          <option>Other</option>
+        </select>
       </div>
 
       <div>
