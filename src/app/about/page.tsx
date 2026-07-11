@@ -1,16 +1,18 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'About Us – Meet Jacob Foret',
   description:
-    'Foret Construction & Roofing LLC is owned and operated by Jacob Foret, a Raceland, LA native serving Lafourche and Terrebonne parishes. Local craftsmanship, FORTIFIED-certified roofing.',
+    'Meet Jacob Foret, a Raceland, LA native and FORTIFIED-certified owner of Foret Construction & Roofing, serving homeowners across Lafourche & Terrebonne parishes.',
   openGraph: {
     title: 'About Foret Construction & Roofing | Raceland, LA',
     description:
       'Meet Jacob Foret, founder of Foret Construction & Roofing LLC. A locally owned general contractor serving Lafourche & Terrebonne parishes.',
     url: 'https://www.foretconstruction.co/about',
+    images: [ogImage],
   },
   alternates: { canonical: 'https://www.foretconstruction.co/about' },
 }

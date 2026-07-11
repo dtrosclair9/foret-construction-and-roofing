@@ -1,15 +1,17 @@
 import type { Metadata } from 'next'
 import ServiceLandingPage from '@/components/ServiceLandingPage'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'FORTIFIED Roof Installation in Houma, LA',
   description:
-    'IBHS-certified FORTIFIED roof installation in Houma, LA. Sealed roof deck, enhanced fastening, and Louisiana wind & hail insurance discounts. Free estimates from Foret Construction & Roofing LLC.',
+    'FORTIFIED roof installation in Houma, LA. IBHS-certified sealed roof deck & enhanced fastening that earn Louisiana wind & hail insurance discounts. Free quotes.',
   alternates: { canonical: 'https://www.foretconstruction.co/services/fortified-roof-houma-la' },
   openGraph: {
     title: 'FORTIFIED Roof Installation in Houma, LA | Foret Construction',
     description: 'FORTIFIED-certified roofing in Houma, LA. Insurance discount eligible. Call (985) 859-5111.',
     url: 'https://www.foretconstruction.co/services/fortified-roof-houma-la',
+    images: [ogImage],
   },
 }
 

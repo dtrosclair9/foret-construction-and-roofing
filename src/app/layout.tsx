@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { BASE_URL, ogImage } from '@/lib/site'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,13 +18,13 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.foretconstruction.co'),
+  metadataBase: new URL(BASE_URL),
   title: {
     default: 'Foret Construction & Roofing LLC | Raceland, LA Contractor',
     template: '%s | Foret Construction & Roofing',
   },
   description:
-    "Foret Construction & Roofing LLC offers new home construction, FORTIFIED roofing, additions, remodeling, and concrete work in Raceland, LA. Serving Lafourche, Terrebonne & surrounding parishes. Call (985) 859-5111.",
+    'General contractor & FORTIFIED roofer in Raceland, LA. New home construction, roofing, additions, remodeling & concrete across Lafourche & Terrebonne parishes.',
   keywords: [
     'roofing contractor Raceland LA',
     'FORTIFIED roof Louisiana',
@@ -38,16 +39,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.foretconstruction.co',
+    url: BASE_URL,
     siteName: 'Foret Construction & Roofing LLC',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Foret Construction & Roofing LLC – Raceland, LA',
-      },
-    ],
+    images: [ogImage],
   },
   twitter: {
     card: 'summary_large_image',

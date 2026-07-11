@@ -40,11 +40,6 @@ export function buildServiceSchema(p: ServiceLandingProps) {
         postalCode: '70394',
         addressCountry: 'US',
       },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '4',
-      },
     },
     areaServed: [
       { '@type': 'City', name: `${p.city}, ${p.state}` },

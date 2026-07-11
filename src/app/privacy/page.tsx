@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'Privacy Policy for Foret Construction & Roofing LLC — how we collect, use, and protect information submitted through our website, contact form, and financing tools.',
+    'How Foret Construction & Roofing collects, uses and protects the information you submit through our Raceland, LA website, contact form and financing tools.',
   alternates: { canonical: 'https://www.foretconstruction.co/privacy' },
   robots: { index: true, follow: true },
   openGraph: {
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
       'Privacy Policy for Foret Construction & Roofing LLC — how we handle the information you share with us.',
     url: 'https://www.foretconstruction.co/privacy',
     siteName: 'Foret Construction & Roofing LLC',
+    images: [ogImage],
     locale: 'en_US',
     type: 'website',
   },

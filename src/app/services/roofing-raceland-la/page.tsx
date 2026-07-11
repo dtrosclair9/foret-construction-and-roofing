@@ -1,15 +1,17 @@
 import type { Metadata } from 'next'
 import ServiceLandingPage from '@/components/ServiceLandingPage'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Roofing Contractor in Raceland, LA',
   description:
-    'Roof replacement and repair in Raceland, LA by Foret Construction & Roofing LLC. Architectural shingles, metal roofing, FORTIFIED systems, storm damage repair. Free estimates.',
+    'Roof replacement & repair in Raceland, LA. Architectural shingles, metal roofing, FORTIFIED systems & storm damage repair. Free estimates from Foret Construction.',
   alternates: { canonical: 'https://www.foretconstruction.co/services/roofing-raceland-la' },
   openGraph: {
     title: 'Roofing Contractor in Raceland, LA | Foret Construction',
     description: 'Roof replacement, repairs, and FORTIFIED roofing in Raceland, LA. Call (985) 859-5111.',
     url: 'https://www.foretconstruction.co/services/roofing-raceland-la',
+    images: [ogImage],
   },
 }
 

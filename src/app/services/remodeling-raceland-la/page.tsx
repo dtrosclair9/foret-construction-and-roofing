@@ -1,15 +1,17 @@
 import type { Metadata } from 'next'
 import ServiceLandingPage from '@/components/ServiceLandingPage'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Remodeling Contractor in Raceland, LA',
   description:
-    'Kitchen remodels, bathroom renovations, and full interior remodels in Raceland, LA. Foret Construction & Roofing LLC — local, FORTIFIED-certified, clean job sites.',
+    'Kitchen, bathroom & full interior remodeling in Raceland, LA from Foret Construction & Roofing. A local, FORTIFIED-certified crew with clean job sites.',
   alternates: { canonical: 'https://www.foretconstruction.co/services/remodeling-raceland-la' },
   openGraph: {
     title: 'Remodeling Contractor in Raceland, LA | Foret Construction',
     description: 'Kitchen, bathroom, and full home remodels in Raceland, LA. Call (985) 859-5111.',
     url: 'https://www.foretconstruction.co/services/remodeling-raceland-la',
+    images: [ogImage],
   },
 }
 
@@ -28,7 +30,7 @@ export default function Page() {
       metaDescription="Kitchen, bathroom, and full home remodels in Raceland, LA."
       intro={[
         "Some homes in Raceland have been in the family for decades — and the kitchen, bath, and floors usually show it. Foret Construction & Roofing LLC remodels them. Kitchens, bathrooms, full interior renovations, and exterior updates that bring a Lafourche Parish home into this decade without losing the parts that made it home.",
-        "We handle the whole remodel under one contractor: demo, framing changes, plumbing and electrical updates, drywall, tile, cabinetry, trim, paint, flooring. Modern finishes done right — not a flip-and-bail rush job.",
+        "We handle the whole remodel under one contractor: demo, framing changes, plumbing and electrical updates, drywall, tile, cabinetry, trim, paint, flooring. Modern finishes and careful craftsmanship — not a flip-and-bail rush job.",
         "Most of our remodel work in Raceland comes from referrals. The neighbor saw the bathroom, the cousin saw the kitchen, and that is how the next call comes in. We work hard to keep it that way.",
       ]}
       whyChooseUs={[

@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import EnhancifyWidget from '@/components/EnhancifyWidget'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Roofing & Construction Financing in Raceland, LA',
   description:
-    'Affordable monthly payment options for roofing, new home construction, additions, and remodeling in Raceland, Houma, Thibodaux and surrounding parishes. Check your rate in seconds — no impact to your credit.',
+    'Finance your new roof, home, addition or remodel in Raceland, Houma & Thibodaux, LA. Check your monthly rate in seconds with no impact to your credit score.',
   alternates: { canonical: 'https://www.foretconstruction.co/financing' },
   openGraph: {
     title: 'Roofing & Construction Financing | Foret Construction & Roofing LLC',
@@ -13,14 +14,7 @@ export const metadata: Metadata = {
       'Pay over time for your new roof, addition, or remodel. Soft credit check, fast approvals, no prepayment penalties. Serving Lafourche and Terrebonne Parishes.',
     url: 'https://www.foretconstruction.co/financing',
     siteName: 'Foret Construction & Roofing LLC',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Foret Construction & Roofing LLC – Financing',
-      },
-    ],
+    images: [ogImage],
     locale: 'en_US',
     type: 'website',
   },

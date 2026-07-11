@@ -1,15 +1,17 @@
 import type { Metadata } from 'next'
 import ServiceLandingPage from '@/components/ServiceLandingPage'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Home Additions in Raceland, LA',
   description:
-    'Home additions, screened porches, sunrooms, master suites, and pool houses in Raceland, LA. Foundation, framing, roofing, finishes — all under one contractor. Foret Construction & Roofing LLC.',
+    'Home additions in Raceland, LA: screened porches, sunrooms, master suites & pool houses. Foundation to finishes under one local contractor. Free estimates.',
   alternates: { canonical: 'https://www.foretconstruction.co/services/home-additions-raceland-la' },
   openGraph: {
     title: 'Home Additions in Raceland, LA | Foret Construction',
     description: 'Home additions in Raceland, LA — screened porches, master suites, pool houses. Call (985) 859-5111.',
     url: 'https://www.foretconstruction.co/services/home-additions-raceland-la',
+    images: [ogImage],
   },
 }
 

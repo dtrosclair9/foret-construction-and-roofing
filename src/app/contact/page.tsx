@@ -1,14 +1,16 @@
 import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Contact Us – Free Estimate in Raceland, LA',
   description:
-    'Contact Foret Construction & Roofing LLC for a free, no-obligation estimate in Raceland, LA. Call (985) 859-5111 or send a message. Serving Lafourche & Terrebonne parishes.',
+    'Contact Foret Construction & Roofing for a free, no-obligation estimate in Raceland, LA. Call (985) 859-5111 or send a message. Serving Lafourche & Terrebonne.',
   openGraph: {
     title: 'Contact Foret Construction & Roofing LLC | Raceland, LA',
     description: 'Get a free estimate from Jacob Foret. Call (985) 859-5111 or fill out our contact form.',
     url: 'https://www.foretconstruction.co/contact',
+    images: [ogImage],
   },
   alternates: { canonical: 'https://www.foretconstruction.co/contact' },
 }

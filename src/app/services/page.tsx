@@ -1,16 +1,18 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Construction & Roofing Services in Raceland, LA',
   description:
-    'Full-service general contractor in Raceland, LA. New home construction, FORTIFIED roofing, home additions, remodeling, concrete work and more across Lafourche & Terrebonne parishes.',
+    'General contractor services in Raceland, LA: new home construction, FORTIFIED roofing, additions, remodeling & concrete work across Lafourche & Terrebonne parishes.',
   openGraph: {
     title: 'Construction & Roofing Services in Raceland, LA | Foret Construction',
     description:
       'New home construction, FORTIFIED roofing, additions, remodeling, concrete work across Lafourche & Terrebonne parishes.',
     url: 'https://www.foretconstruction.co/services',
+    images: [ogImage],
   },
   alternates: { canonical: 'https://www.foretconstruction.co/services' },
 }

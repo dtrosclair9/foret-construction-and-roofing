@@ -1,16 +1,18 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Foret Construction & Roofing LLC | Raceland, LA Contractor',
   description:
-    'Locally owned general contractor & FORTIFIED-certified roofer in Raceland, LA. New home construction, roofing, additions, remodeling & concrete work across Lafourche & Terrebonne parishes. Call (985) 859-5111.',
+    'Foret Construction & Roofing: general contractor & FORTIFIED roofer in Raceland, LA. New homes, roofing, additions, remodeling & concrete. Call (985) 859-5111.',
   openGraph: {
     title: 'Foret Construction & Roofing LLC | Raceland, LA Contractor',
     description:
       "Raceland's trusted general contractor. New home construction, FORTIFIED roofing, additions, remodeling & concrete. Call (985) 859-5111.",
     url: 'https://www.foretconstruction.co',
+    images: [ogImage],
   },
   alternates: { canonical: 'https://www.foretconstruction.co' },
 }
@@ -49,7 +51,7 @@ const services = [
     href: '/services/remodeling-raceland-la',
     image: '/images/remodel-bathroom-marble-vanity-barn-door.jpg',
     alt: 'Modern bathroom remodel with marble vanity and barn door — Foret Construction, Lafourche Parish',
-    description: 'Kitchens, bathrooms, full interior renovations. Modern finishes done right by a local crew you can trust.',
+    description: 'Kitchens, bathrooms, full interior renovations. Modern finishes and clean craftsmanship from a local crew you can trust.',
   },
   {
     title: 'Concrete & Outdoor Structures',
@@ -150,19 +152,6 @@ const schema = {
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Concrete & Outdoor Structures' } },
         ],
       },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '4',
-        bestRating: '5',
-        worstRating: '5',
-      },
-      review: reviews.map((r) => ({
-        '@type': 'Review',
-        reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: 5 },
-        author: { '@type': 'Person', name: r.name },
-        reviewBody: r.text,
-      })),
     },
     {
       '@type': 'WebSite',

@@ -1,15 +1,17 @@
 import type { Metadata } from 'next'
 import ServiceLandingPage from '@/components/ServiceLandingPage'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'New Home Construction in Thibodaux, LA',
   description:
-    'Custom new home construction in Thibodaux, LA. Full-service general contractor — slab to shingle. FORTIFIED roof option included. Free estimates from Foret Construction & Roofing LLC.',
+    'Custom new home construction in Thibodaux, LA. A full-service general contractor building slab to shingle, with a FORTIFIED roof option. Free estimates.',
   alternates: { canonical: 'https://www.foretconstruction.co/services/new-home-construction-thibodaux-la' },
   openGraph: {
     title: 'New Home Construction in Thibodaux, LA | Foret Construction',
     description: 'Custom homes built from slab to shingle in Thibodaux, LA. Call (985) 859-5111.',
     url: 'https://www.foretconstruction.co/services/new-home-construction-thibodaux-la',
+    images: [ogImage],
   },
 }
 
