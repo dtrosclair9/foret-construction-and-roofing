@@ -89,7 +89,7 @@ export default function AboutPage() {
       {/* ── PAGE HERO ───────────────────────────────────────────── */}
       <section className="bg-primary py-20 text-white text-center" aria-label="About page hero">
         <div className="container-wide">
-          <p className="section-label">Our Story</p>
+          <p className="section-label text-accent-light">Our Story</p>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 uppercase tracking-tight">
             About Foret Construction & Roofing LLC
           </h1>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary via-primary/70 to-transparent p-6">
-                <p className="text-accent font-semibold text-sm uppercase tracking-wider">Raceland, Louisiana</p>
+                <p className="text-accent-light font-semibold text-sm uppercase tracking-wider">Raceland, Louisiana</p>
                 <p className="text-white font-bold text-2xl font-serif">Jacob Foret, Owner</p>
               </div>
             </div>

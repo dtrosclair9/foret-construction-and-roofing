@@ -64,7 +64,7 @@ export default function Header() {
             />
             <span className="text-white font-serif font-bold text-base sm:text-lg leading-tight hidden sm:block">
               Foret Construction<br />
-              <span className="text-accent text-xs uppercase tracking-widest font-sans">& Roofing LLC</span>
+              <span className="text-accent-light text-xs uppercase tracking-widest font-sans">& Roofing LLC</span>
             </span>
           </Link>
 

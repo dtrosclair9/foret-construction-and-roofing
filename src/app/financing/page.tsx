@@ -81,7 +81,7 @@ export default function FinancingPage() {
       {/* Hero */}
       <section className="bg-primary text-white">
         <div className="container-wide section-padding text-center">
-          <p className="section-label mb-4">Financing Available</p>
+          <p className="section-label text-accent-light mb-4">Financing Available</p>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Financing for Roofing &amp; Construction <br className="hidden sm:block" />
             in Raceland, LA

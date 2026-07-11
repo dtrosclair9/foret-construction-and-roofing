@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
       {/* Hero */}
       <section className="bg-primary text-white">
         <div className="container-wide section-padding text-center">
-          <p className="section-label mb-4">Legal</p>
+          <p className="section-label text-accent-light mb-4">Legal</p>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold leading-tight mb-4">
             Privacy Policy
           </h1>

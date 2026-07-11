@@ -35,7 +35,7 @@ export default function Page() {
       ]}
       whyChooseUs={[
         {
-          title: 'Kitchens & Baths Done Right',
+          title: 'Kitchens & Baths, Start to Finish',
           body: 'Cabinetry, countertops, tile, plumbing, electrical, lighting — all under one roof. We coordinate the trades so you are not stuck living in dust for an extra month while a sub does not show up.',
         },
         {

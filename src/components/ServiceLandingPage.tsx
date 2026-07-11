@@ -71,7 +71,7 @@ export default function ServiceLandingPage(p: ServiceLandingProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/60" />
         <div className="relative z-10 container-wide py-20 text-white">
-          <p className="section-label mb-4">{p.city}, {p.state} &middot; {p.county}</p>
+          <p className="section-label text-accent-light mb-4">{p.city}, {p.state} &middot; {p.county}</p>
           <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] max-w-4xl uppercase tracking-tight">
             {p.service} in {p.city}, {p.state}
           </h1>
@@ -156,7 +156,7 @@ export default function ServiceLandingPage(p: ServiceLandingProps) {
       {/* ── SERVICE AREA ────────────────────────────────────────── */}
       <section className="section-padding bg-primary text-white" aria-labelledby="area-heading">
         <div className="container-wide text-center">
-          <p className="section-label">Service Area</p>
+          <p className="section-label text-accent-light">Service Area</p>
           <h2 id="area-heading" className="text-3xl md:text-4xl font-bold mt-2 mb-6">
             Serving {p.city} &amp; All of {p.county}
           </h2>

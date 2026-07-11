@@ -35,7 +35,7 @@ export default function Footer() {
               />
               <div>
                 <p className="text-white font-serif font-bold text-lg leading-tight">Foret Construction</p>
-                <p className="text-accent text-xs uppercase tracking-widest font-semibold">& Roofing LLC</p>
+                <p className="text-accent-light text-xs uppercase tracking-widest font-semibold">& Roofing LLC</p>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-md">
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-accent font-semibold text-xs uppercase tracking-widest mb-5">Services</h3>
+            <h3 className="text-accent-light font-semibold text-xs uppercase tracking-widest mb-5">Services</h3>
             <ul className="space-y-2">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* Service Pages */}
           <div>
-            <h3 className="text-accent font-semibold text-xs uppercase tracking-widest mb-5">Service Areas</h3>
+            <h3 className="text-accent-light font-semibold text-xs uppercase tracking-widest mb-5">Service Areas</h3>
             <ul className="space-y-2">
               {cityLinks.map((link) => (
                 <li key={link.href}>
@@ -85,7 +85,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-accent font-semibold text-xs uppercase tracking-widest mb-5">Contact</h3>
+            <h3 className="text-accent-light font-semibold text-xs uppercase tracking-widest mb-5">Contact</h3>
             <address className="not-italic space-y-3 text-sm text-gray-400">
               <div className="flex items-start gap-2.5">
                 <svg className="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -111,20 +111,24 @@ export default function Footer() {
                 </a>
               </div>
               <div className="pt-2">
-                <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">Hours</p>
+                <p className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-1">Hours</p>
                 <p className="text-xs">Mon–Sun: 7:00 AM – 7:00 PM</p>
               </div>
             </address>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
+        <div className="border-t border-gray-800 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400">
           <p>&copy; {new Date().getFullYear()} Foret Construction & Roofing LLC. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="/privacy" className="hover:text-accent transition-colors">
               Privacy Policy
             </Link>
-            <span className="text-gray-700">&middot;</span>
+            <span className="text-gray-600" aria-hidden="true">&middot;</span>
+            <Link href="/accessibility" className="hover:text-accent transition-colors">
+              Accessibility
+            </Link>
+            <span className="text-gray-600" aria-hidden="true">&middot;</span>
             <p>Raceland, LA &middot; Serving Lafourche &amp; Terrebonne Parishes</p>
           </div>
         </div>

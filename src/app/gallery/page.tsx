@@ -36,7 +36,7 @@ export default function GalleryPage() {
       {/* ── PAGE HERO ───────────────────────────────────────────── */}
       <section className="bg-primary py-20 text-white text-center" aria-label="Gallery page hero">
         <div className="container-wide">
-          <p className="section-label">Our Portfolio</p>
+          <p className="section-label text-accent-light">Our Portfolio</p>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 uppercase tracking-tight">
             Project Gallery
           </h1>
@@ -85,7 +85,7 @@ export default function GalleryPage() {
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/50 transition-colors duration-300" />
                 </div>
                 <figcaption className="absolute bottom-0 left-0 right-0 px-4 py-3 bg-gradient-to-t from-primary via-primary/80 to-transparent">
-                  <span className="inline-block text-accent text-xs font-semibold uppercase tracking-wider mb-0.5">
+                  <span className="inline-block text-accent-light text-xs font-semibold uppercase tracking-wider mb-0.5">
                     {photo.category}
                   </span>
                   <p className="text-white text-sm font-semibold font-serif">{photo.title}</p>

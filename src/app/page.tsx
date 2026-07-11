@@ -165,7 +165,7 @@ const schema = {
 
 function StarRow({ count }: { count: number }) {
   return (
-    <div className="flex items-center gap-0.5" aria-label={`${count} out of 5 stars`}>
+    <div className="flex items-center gap-0.5" role="img" aria-label={`${count} out of 5 stars`}>
       {Array.from({ length: count }).map((_, i) => (
         <svg key={i} className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.16c.969 0 1.371 1.24.588 1.81l-3.367 2.446a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.539 1.118l-3.366-2.446a1 1 0 00-1.176 0l-3.366 2.446c-.784.57-1.838-.197-1.539-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.073 9.384c-.783-.57-.38-1.81.588-1.81h4.16a1 1 0 00.95-.69l1.286-3.957z" />
@@ -195,7 +195,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40" />
         <div className="relative z-10 container-wide py-24 text-white">
-          <p className="section-label mb-4">Raceland, Louisiana &middot; Lafourche Parish</p>
+          <p className="section-label text-accent-light mb-4">Raceland, Louisiana &middot; Lafourche Parish</p>
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] max-w-4xl uppercase tracking-tight">
             Built Right.<br />
             <span className="text-accent">Built to Last.</span>
@@ -223,15 +223,15 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-accent-dark text-white text-center">
             <div className="py-3 sm:py-0 px-4">
               <p className="font-bold text-xl font-serif">FORTIFIED Certified</p>
-              <p className="text-sm font-medium opacity-90">IBHS-Approved Roofer</p>
+              <p className="text-sm font-medium">IBHS-Approved Roofer</p>
             </div>
             <div className="py-3 sm:py-0 px-4">
               <p className="font-bold text-xl font-serif">Locally Owned</p>
-              <p className="text-sm font-medium opacity-90">Raceland, LA Native</p>
+              <p className="text-sm font-medium">Raceland, LA Native</p>
             </div>
             <div className="py-3 sm:py-0 px-4">
               <p className="font-bold text-xl font-serif">Free Estimates</p>
-              <p className="text-sm font-medium opacity-90">No Pressure, No Obligation</p>
+              <p className="text-sm font-medium">No Pressure, No Obligation</p>
             </div>
           </div>
         </div>
@@ -301,7 +301,7 @@ export default function HomePage() {
         <div className="container-wide relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="section-label">Why FORTIFIED?</p>
+              <p className="section-label text-accent-light">Why FORTIFIED?</p>
               <h2 id="fortified-heading" className="text-3xl md:text-4xl font-bold mt-2 mb-6 leading-tight">
                 The Roof Is Your Home&apos;s First Line of Defense Against Hurricane Country.
               </h2>

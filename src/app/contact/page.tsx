@@ -49,7 +49,7 @@ export default function ContactPage() {
       {/* ── PAGE HERO ───────────────────────────────────────────── */}
       <section className="bg-primary py-20 text-white text-center" aria-label="Contact page hero">
         <div className="container-wide">
-          <p className="section-label">Get in Touch</p>
+          <p className="section-label text-accent-light">Get in Touch</p>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 uppercase tracking-tight">
             Contact Foret Construction
           </h1>

@@ -171,7 +171,7 @@ export default function ServicesPage() {
       {/* ── PAGE HERO ───────────────────────────────────────────── */}
       <section className="bg-primary py-20 text-white text-center" aria-label="Services page hero">
         <div className="container-wide">
-          <p className="section-label">Foret Construction & Roofing LLC</p>
+          <p className="section-label text-accent-light">Foret Construction & Roofing LLC</p>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 uppercase tracking-tight">
             Construction & Roofing Services in Raceland, LA
           </h1>
