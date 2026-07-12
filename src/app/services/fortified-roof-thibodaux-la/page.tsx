@@ -63,6 +63,29 @@ export default function Page() {
         'Insurance discount documentation support',
         'Manufacturer warranty + workmanship warranty',
       ]}
+      faqs={[
+        {
+          question: 'Thibodaux is a little inland — is a FORTIFIED roof still worth it?',
+          answer:
+            'Yes. Being a few miles up Bayou Lafourche does not put Thibodaux out of reach of named storms; the city has seen the full force of recent hurricanes. A FORTIFIED roof’s sealed deck and enhanced fastening protect against the wind and wind-driven rain that reach well inland, and the insurance discount applies whether you are near Nicholls State or out toward Schriever.',
+        },
+        {
+          question: 'Can you install a FORTIFIED roof on an older or historic Thibodaux home?',
+          answer:
+            'In most cases, yes. FORTIFIED is about the installation method, so as long as the roof deck is sound we can bring an older home up to the standard. On historic homes near downtown Thibodaux we match shingle profiles and rooflines carefully so the upgrade protects the house without changing its character.',
+        },
+        {
+          question: 'How do the insurance discounts work for a Thibodaux FORTIFIED roof?',
+          answer:
+            'Louisiana requires insurers to discount the wind portion of your premium for a verified FORTIFIED roof. Once your roof is certified, you get a designation certificate to submit to your carrier, and the savings apply at renewal. The dollar amount varies by policy, so call us and we will explain what documentation you will need.',
+        },
+        {
+          question: 'Who handles the permit for a re-roof in the City of Thibodaux?',
+          answer:
+            'We do. Roofs inside Thibodaux city limits go through the city permit office, while homes in the surrounding unincorporated area go through Lafourche Parish. We pull the right permit either way and coordinate any inspections so you do not have to track it.',
+        },
+        // TODO(owner): confirm specifics (real insurance discount ranges, typical re-roof timeline and price) to replace the "call us" hedges above and strengthen these FAQs
+      ]}
       closingPitch="Want a FORTIFIED roof for your Thibodaux home? Call Jacob for a free, no-pressure walk-through and estimate."
     />
   )

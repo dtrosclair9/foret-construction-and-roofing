@@ -15,7 +15,24 @@ export type ServiceLandingProps = {
   intro: string[]
   whyChooseUs: { title: string; body: string }[]
   whatsIncluded: string[]
+  faqs?: { question: string; answer: string }[]
   closingPitch: string
+}
+
+export function buildFaqSchema(p: ServiceLandingProps) {
+  if (!p.faqs || p.faqs.length === 0) return null
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: p.faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.answer.replace(/<[^>]+>/g, ''),
+      },
+    })),
+  }
 }
 
 export function buildServiceSchema(p: ServiceLandingProps) {
@@ -51,6 +68,7 @@ export function buildServiceSchema(p: ServiceLandingProps) {
 
 export default function ServiceLandingPage(p: ServiceLandingProps) {
   const schema = buildServiceSchema(p)
+  const faqSchema = buildFaqSchema(p)
 
   return (
     <>
@@ -58,6 +76,12 @@ export default function ServiceLandingPage(p: ServiceLandingProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* ── HERO ────────────────────────────────────────────────── */}
       <section className="relative min-h-[60vh] flex items-center" aria-label="Page hero">
@@ -173,6 +197,42 @@ export default function ServiceLandingPage(p: ServiceLandingProps) {
           </div>
         </div>
       </section>
+
+      {/* ── FAQ ─────────────────────────────────────────────────── */}
+      {p.faqs && p.faqs.length > 0 && (
+        <section className="section-padding bg-gray-50" aria-labelledby="faq-heading">
+          <div className="container-wide max-w-3xl">
+            <div className="text-center mb-10">
+              <p className="section-label">Questions &amp; Answers</p>
+              <h2 id="faq-heading" className="text-3xl md:text-4xl font-bold text-primary mt-2">
+                {p.service} FAQs for {p.city} Homeowners
+              </h2>
+            </div>
+            <div className="space-y-4">
+              {p.faqs.map((f) => (
+                <details
+                  key={f.question}
+                  className="group bg-white rounded-xl border border-gray-100 shadow-sm px-6 py-1 open:shadow-md"
+                >
+                  <summary className="flex items-center justify-between gap-4 cursor-pointer list-none py-5 font-bold text-primary text-lg">
+                    <span>{f.question}</span>
+                    <svg
+                      className="w-5 h-5 text-accent shrink-0 transition-transform group-open:rotate-180"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <p className="text-gray-600 leading-relaxed pb-5 -mt-1">{f.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── CLOSING + CTA ───────────────────────────────────────── */}
       <section className="section-padding bg-white" aria-labelledby="closing-heading">

@@ -63,6 +63,44 @@ export default function Page() {
         'Final inspection & walk-through',
         'Cleanup & punch list completion',
       ]}
+      faqs={[
+        {
+          question: 'What kinds of home additions do you build in Raceland?',
+          answer:
+            'We build screened porches, sunrooms, master suite and in-law suite additions, garage additions, and full pool houses. If you are adding square footage to a Raceland home rather than moving, we can take it from foundation to finished interior under one contractor.',
+        },
+        {
+          question: 'Will an addition match my existing house, or look bolted on?',
+          answer:
+            'Matching is the whole point. We plan roof pitch, siding, and brick or trim profiles up front so the addition reads as part of the original house. A lot of additions look like an afterthought because the tie-in was not planned; we design that seam out from the start.',
+        },
+        {
+          question: 'Do I need a permit for a home addition in Lafourche Parish?',
+          answer:
+            'Almost always, yes. Adding square footage or altering the footprint triggers parish permitting and inspections, and additions have to meet current structural and, in many areas, flood-elevation requirements. We handle the permit and inspection process as part of the project so it is not on you to navigate.',
+        },
+        {
+          question: 'Is it cheaper to add on than to buy a bigger house?',
+          answer:
+            'Often it is, especially in Raceland where family land and good lots are not something people want to walk away from. Adding the space you need can cost less than buying, moving, and taking on a new mortgage, but it depends on the scope, so we give you a real quote to compare against.',
+        },
+        {
+          question: 'Can you tie the addition’s roof into my existing or FORTIFIED roof?',
+          answer:
+            'Yes. Roofing is our core trade, so tying an addition’s roof cleanly into the existing one (matching pitch, shingles, and flashing so it does not leak at the seam) is exactly the kind of detail we handle. If your home has or is getting a FORTIFIED roof, we build the addition’s roof to work with it.',
+        },
+        {
+          question: 'How long does a home addition take?',
+          answer:
+            'It depends on the size and complexity. A screened porch is a much shorter project than a full master suite with plumbing and electrical. We give you a realistic timeline once we have scoped the design, and one crew stays on it start to finish.',
+        },
+        {
+          question: 'Do you handle the interior finish, or just the shell?',
+          answer:
+            'The whole thing. Slab or floor framing, walls, and roof tie-in, then drywall, electrical, plumbing, flooring, trim, and paint. The addition is move-in ready when we are done, not a shell you have to hire someone else to finish.',
+        },
+        // TODO(owner): confirm specifics (real per-square-foot or per-project price ranges, typical timelines by addition type) to replace the "call us" hedges above and strengthen these FAQs
+      ]}
       closingPitch="Thinking about adding on in Raceland? Call Jacob for a free walk-through. We will look at the existing structure, talk through what you want, and quote it straight."
     />
   )

@@ -63,6 +63,29 @@ export default function Page() {
         'Flooring, cabinetry, fixtures',
         'Final walk-through & punch list',
       ]}
+      faqs={[
+        {
+          question: 'Is Foret Construction local to Houma?',
+          answer:
+            'We are based about 25 minutes up the road in Raceland and build throughout Terrebonne Parish, including Houma. You get a nearby contractor who knows the parish soil, storm exposure, and permit process, not an out-of-town builder who disappears after the slab is poured.',
+        },
+        {
+          question: 'How do you build a new Houma home to handle hurricanes?',
+          answer:
+            'Houma’s direct storm exposure gets designed in from the start: hurricane-rated sheathing and fastening, an IBHS FORTIFIED roof option, and slab and pier specs suited to Terrebonne’s high water table. Storm resilience is built into the structure, not added as an upgrade at the end.',
+        },
+        {
+          question: 'Can building new in Houma help with insurance?',
+          answer:
+            'It can. A new home built with a FORTIFIED roof qualifies for the Louisiana wind and hail insurance discount from day one, and newer construction to current wind codes is often easier to insure in coastal Terrebonne Parish than an older home. We provide the FORTIFIED documentation your carrier needs. Call for details.',
+        },
+        {
+          question: 'Do you handle the permits and inspections for a Houma build?',
+          answer:
+            'Yes. New construction in Terrebonne Parish runs through the parish permit and inspection process, and we manage that as part of the build: permits, scheduled inspections, and code sign-offs, so you are not chasing paperwork while trying to plan a move.',
+        },
+        // TODO(owner): confirm specifics (real price-per-square-foot range, typical build timeline, insurance discount amount) to replace the "call us" hedges above and strengthen these FAQs
+      ]}
       closingPitch="Planning a new build in Houma? Reach out for a free consultation. We will sit down with your plans (or sketch) and quote it honestly — line by line."
     />
   )

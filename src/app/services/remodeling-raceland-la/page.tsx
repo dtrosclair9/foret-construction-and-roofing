@@ -63,6 +63,44 @@ export default function Page() {
         'Lighting & fixtures',
         'Final cleanup & walk-through',
       ]}
+      faqs={[
+        {
+          question: 'What types of remodels does Foret Construction handle in Raceland?',
+          answer:
+            'Kitchens, bathrooms, full interior renovations, and exterior updates. Whether it is a single bathroom or gutting and reworking the whole interior of a family home that has been in Raceland for decades, we handle demo through final finishes under one contractor.',
+        },
+        {
+          question: 'Can I stay in my house during the remodel?',
+          answer:
+            'Often, yes, depending on how much of the home is under construction at once. For a single kitchen or bath, most families stay put; for a full-interior renovation it can be easier to be out during the messiest phases. We set expectations up front and sequence the work to keep your home livable where we can.',
+        },
+        {
+          question: 'Do you handle plumbing and electrical, or do I hire that separately?',
+          answer:
+            'We coordinate the whole remodel: demo, framing changes, plumbing and electrical updates, drywall, tile, cabinetry, trim, paint, and flooring. You are not lining up separate trades yourself or living in dust an extra month because a sub did not show. One contractor owns the schedule.',
+        },
+        {
+          question: 'Will I need a permit to remodel my Raceland home?',
+          answer:
+            'It depends on the scope. Cosmetic updates usually do not, but moving walls, changing the footprint, or altering plumbing and electrical typically require Lafourche Parish permits and inspections. We tell you what your project needs and pull the permits as part of the job.',
+        },
+        {
+          question: 'How much does a kitchen or bathroom remodel cost?',
+          answer:
+            'It ranges widely based on size, layout changes, and the finishes you choose. The same bathroom can be a modest refresh or a full gut. Rather than quote a number that changes later, we look at your space and selections and give you a real, detailed estimate.',
+        },
+        {
+          question: 'How long does a remodel take?',
+          answer:
+            'A bathroom is a shorter project than a full kitchen or whole-interior renovation, and material lead times and change orders affect the schedule. We give you a realistic timeline when we quote it and keep the trades coordinated so it does not drag.',
+        },
+        {
+          question: 'Why do most of your remodel jobs come from referrals?',
+          answer:
+            'Because remodels are personal. A neighbor sees the finished bathroom, a cousin sees the kitchen, and that is how the next call comes in. We work to earn that by doing careful work and not treating it like a rushed flip, which is how most of our Raceland remodel work comes to us.',
+        },
+        // TODO(owner): confirm specifics (real kitchen/bath price ranges, typical remodel timelines) to replace the "call us" hedges above and strengthen these FAQs
+      ]}
       closingPitch="Ready to remodel in Raceland? Call Jacob to schedule a free, no-pressure walk-through. We will look at the space, talk through the vision, and quote it honestly."
     />
   )

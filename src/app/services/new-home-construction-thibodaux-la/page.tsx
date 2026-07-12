@@ -63,6 +63,29 @@ export default function Page() {
         'Flooring, cabinetry, fixtures',
         'Final walk-through & punch list',
       ]}
+      faqs={[
+        {
+          question: 'Can you build on both new subdivision lots and infill lots in Thibodaux?',
+          answer:
+            'Yes. We build on new subdivision lots out toward Schriever and Highway 20 as well as infill lots in established neighborhoods near Nicholls State. Older infill lots sometimes come with utility, drainage, or setback quirks, so we assess the specific site before finalizing the plan.',
+        },
+        {
+          question: 'Will a new Thibodaux home come with a FORTIFIED roof?',
+          answer:
+            'It can. Every home we build can be finished with an IBHS FORTIFIED roof. Building it in from the start locks in hurricane-grade roof construction and the Louisiana wind and hail insurance discount from your first day of ownership, which is far simpler than retrofitting later.',
+        },
+        {
+          question: 'Who pulls the permits for new construction in Thibodaux?',
+          answer:
+            'We do. A build inside Thibodaux city limits goes through the city permit office; a lot in the surrounding unincorporated area goes through Lafourche Parish. We handle whichever applies, along with the inspections, as part of the project.',
+        },
+        {
+          question: 'How long does it take to build a new home in Thibodaux?',
+          answer:
+            'Timelines depend on size, design complexity, weather, and how quickly selections and permits come together, so we will not quote a specific number of days up front. We will give you a realistic schedule once we have reviewed your plans, and we keep you updated as the build progresses.',
+        },
+        // TODO(owner): confirm specifics (typical build timeline in months, price-per-square-foot range) to replace the "call us" hedges above and strengthen these FAQs
+      ]}
       closingPitch="Building in Thibodaux? Call Jacob for a no-pressure consultation. We will go over plans, scope, and pricing in plain English."
     />
   )

@@ -63,6 +63,29 @@ export default function Page() {
         'Insurance discount documentation support',
         'Manufacturer warranty + workmanship warranty',
       ]}
+      faqs={[
+        {
+          question: 'Why is a FORTIFIED roof worth it in Houma specifically?',
+          answer:
+            'Houma takes direct hurricane impacts. Ida, Zeta, and Laura all tested Terrebonne Parish roofs in recent years. A FORTIFIED roof is engineered for exactly what those storms do: wind uplift, edge failure, and water intrusion once shingles start lifting. The sealed deck alone helps keep water out even when the outer layer is damaged, which is often what saves the inside of the house.',
+        },
+        {
+          question: 'Will a FORTIFIED designation help with insurance in Terrebonne Parish?',
+          answer:
+            'It can. Louisiana requires insurers to discount the wind portion of the premium for a verified FORTIFIED roof, and Terrebonne carriers recognize the designation. With insurance availability tight in coastal parishes, a FORTIFIED roof can also make a home easier to insure in the first place. We hand you the certificate and documentation to submit. Call and we will explain the process.',
+        },
+        {
+          question: 'Can you install a FORTIFIED roof on an older Houma home?',
+          answer:
+            'In most cases, yes. FORTIFIED is about how the new roof is installed, not the age of the house, so as long as the deck is sound we can strip to the deck, seal and re-fasten it to spec, and certify it. If we find rotted decking during tear-off, which is common in high-humidity Terrebonne homes, we will show you and quote the repair before moving forward.',
+        },
+        {
+          question: 'How soon after a hurricane can you get to my Houma roof?',
+          answer:
+            'It depends on how widespread the damage is after a given storm. Call us as soon as it is safe and we will get you on the schedule and, if needed, tarp the roof to stop further water intrusion. We serve Houma and all of Terrebonne Parish, so you are not waiting on an out-of-town crew to drive in.',
+        },
+        // TODO(owner): confirm specifics (real Terrebonne insurance discount ranges, post-storm response window, price ranges) to replace the "call us" hedges above and strengthen these FAQs
+      ]}
       closingPitch="Get a free FORTIFIED roof estimate for your Houma home. We will walk the roof, explain the FORTIFIED options, and quote it straight — no surprises and no high-pressure pitch."
     />
   )

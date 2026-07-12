@@ -63,6 +63,44 @@ export default function Page() {
         'FORTIFIED upgrade option available',
         'Magnetic nail sweep & full job site cleanup',
       ]}
+      faqs={[
+        {
+          question: 'How do I know if my Raceland roof needs repair or full replacement?',
+          answer:
+            'The honest answer comes from getting on the roof. Isolated storm damage or a few missing shingles is often a repair; widespread granule loss, multiple leaks, aging shingles, or storm damage across most of the roof usually points to replacement. We walk your roof, show you what we find, and give you a straight recommendation rather than defaulting to the bigger job.',
+        },
+        {
+          question: 'What roofing materials do you install?',
+          answer:
+            'We install architectural asphalt shingles, metal roofing, and full IBHS FORTIFIED roof systems. Asphalt shingles are the most common choice in Raceland for cost and looks; metal lasts longer and sheds water fast; FORTIFIED is the choice when storm resilience and insurance discounts are the priority. We help you weigh the trade-offs for your home.',
+        },
+        {
+          question: 'Can you help with a storm damage insurance claim?',
+          answer:
+            'We can document the damage and provide the assessment and photos you need for your claim, and work within your adjuster’s scope during the repair. We do not file the claim for you or promise a specific outcome, but we make sure the damage is properly documented so nothing gets missed. Call us and we will explain the process.',
+        },
+        {
+          question: 'Do you offer FORTIFIED roofing in Raceland?',
+          answer:
+            'Yes. Foret Construction is FORTIFIED certified by the IBHS, so we can install roofs to the elevated FORTIFIED standard (sealed deck, enhanced fastening, certified and documented), which also unlocks the Louisiana wind and hail insurance discount. It is one of the main reasons homeowners in hurricane country choose us.',
+        },
+        {
+          question: 'How long does a roof replacement take?',
+          answer:
+            'Most residential re-roofs are a short project once we start, but the exact time depends on the size and pitch of the roof, the material, and the weather during storm season. We give you a realistic window when we quote it and keep you posted if weather moves the schedule.',
+        },
+        {
+          question: 'Do you clean up after the job?',
+          answer:
+            'Yes, and customers mention it constantly. We run magnetic sweeps for nails, clean up daily, and haul off the old roofing. The goal is to leave your yard and driveway cleaner than we found them, so you are not finding roofing nails in the grass months later.',
+        },
+        {
+          question: 'What areas around Raceland do you cover for roofing?',
+          answer:
+            'We roof throughout Lafourche Parish and into Terrebonne: Raceland, Lockport, Larose, Cut Off, Galliano, Schriever, Bayou Blue, Thibodaux, and Houma. Being local means we can get to storm-damaged roofs quickly instead of you waiting on a crew from out of the area.',
+        },
+        // TODO(owner): confirm specifics (real repair vs. replacement price ranges, typical re-roof timeline in days, warranty terms) to replace the "call us" hedges above and strengthen these FAQs
+      ]}
       closingPitch="Need a roof in Raceland? Call us for a free, on-the-roof inspection and estimate. We will tell you straight what you need — and what you don't."
     />
   )
