@@ -11,9 +11,11 @@
     @apply font-serif;
   }
 
-  /* Visible keyboard-focus indicator for accessibility (WCAG 2.4.7 / 2.4.11) */
+  /* Visible keyboard-focus indicator for accessibility (WCAG 2.4.7 / 2.4.11).
+     Focus outline is a graphical/non-text UI element (3:1 threshold, WCAG 1.4.11),
+     so it uses the deep brand red #DC2626 — 4.83:1 on white, 3.97:1 on dark #0F0F0F. */
   :focus-visible {
-    outline: 3px solid #EF4444;
+    outline: 3px solid #DC2626;
     outline-offset: 2px;
     border-radius: 2px;
   }
@@ -26,7 +28,7 @@
   }
   .skip-link:focus {
     @apply not-sr-only fixed top-3 left-3 z-[100] bg-white text-primary font-semibold px-4 py-2 rounded shadow-lg;
-    outline: 3px solid #EF4444;
+    outline: 3px solid #DC2626;
     outline-offset: 2px;
   }
 }
