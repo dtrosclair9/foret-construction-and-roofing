@@ -61,7 +61,6 @@ export default function Page() {
         'Drip edge & starter strip on all eaves and rakes',
         'Final inspection & FORTIFIED certificate',
         'Insurance discount documentation support',
-        'Manufacturer warranty + workmanship warranty',
       ]}
       faqs={[
         {

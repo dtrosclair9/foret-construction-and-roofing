@@ -39,9 +39,46 @@ const benefits = [
   },
 ]
 
+const faqs = [
+  {
+    question: 'How does financing through Foret Construction work?',
+    answer:
+      'We partner with Enhancify, a home improvement financing platform. You enter your project amount, see real rates and monthly payment options from lenders, and pick the plan that fits your budget. Once you are approved, we get your project on the schedule.',
+  },
+  {
+    question: 'Will checking my rate hurt my credit score?',
+    answer:
+      'No. Pre-qualifying uses a soft credit check that does not affect your credit score. You can see your rates and payment options first and decide after.',
+  },
+  {
+    question: 'What projects can be financed?',
+    answer:
+      'Any of our services: roof replacement, FORTIFIED roof upgrades, new home construction, additions, remodeling, and concrete work. Call us at (985) 859-5111 if you want to talk through what a monthly payment might look like for your project.',
+  },
+  {
+    question: 'Can I pay my loan off early?',
+    answer:
+      'Yes. The financing options offered through our partner have no prepayment penalty, so you can pay the balance off whenever you want without extra fees.',
+  },
+]
+
 export default function FinancingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((f) => ({
+              '@type': 'Question',
+              name: f.question,
+              acceptedAnswer: { '@type': 'Answer', text: f.answer },
+            })),
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -145,6 +182,40 @@ export default function FinancingPage() {
               Larose, Mathews, Bourg, and surrounding communities throughout Lafourche and Terrebonne
               Parishes.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-white" aria-labelledby="financing-faq-heading">
+        <div className="container-wide section-padding">
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <p className="section-label mb-3">Common Questions</p>
+            <h2 id="financing-faq-heading" className="font-serif text-3xl sm:text-4xl font-bold text-primary">
+              Financing FAQs
+            </h2>
+          </div>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faqs.map((f) => (
+              <details
+                key={f.question}
+                className="group bg-gray-50 rounded-xl border border-gray-100 shadow-sm px-6 py-1 open:shadow-md"
+              >
+                <summary className="flex items-center justify-between gap-4 cursor-pointer list-none py-5 font-bold text-primary text-lg">
+                  <span>{f.question}</span>
+                  <svg
+                    className="w-5 h-5 text-accent shrink-0 transition-transform group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p className="text-gray-600 leading-relaxed pb-5 -mt-1">{f.answer}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>

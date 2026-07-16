@@ -92,10 +92,58 @@ const reviews = [
 const galleryPreviews = [
   { src: '/images/new-construction-modern-white-brick.jpg', alt: 'New home construction modern white brick exterior — Raceland, LA', span: 'tall' },
   { src: '/images/addition-pool-house-completed.jpg', alt: 'Completed pool house and pool with custom concrete decking — Lafourche Parish', span: 'wide' },
-  { src: '/images/roofing-aerial-shingles-raceland.jpg', alt: 'Aerial view of new architectural shingle roof — Raceland, LA', span: 'normal' },
+  { src: '/images/crew-roof-tearoff.jpg', alt: 'Foret Construction crew tearing off old shingles during a roof replacement', span: 'normal' },
   { src: '/images/remodel-bathroom-marble-vanity-barn-door.jpg', alt: 'Modern bathroom remodel with marble countertop and barn door', span: 'tall' },
   { src: '/images/addition-covered-patio-wood-ceiling.jpg', alt: 'Covered patio addition with wood-plank ceiling — Lafourche Parish', span: 'normal' },
   { src: '/images/concrete-bobcat-grading-pad.jpg', alt: 'Concrete pad grading and finishing with Bobcat — Foret Construction crew', span: 'normal' },
+]
+
+const faqs = [
+  {
+    question: 'What services does Foret Construction & Roofing offer?',
+    answer:
+      'Foret Construction & Roofing LLC is a full general contracting company. We handle new home construction, roof replacement and repair, FORTIFIED roof installation, home additions, remodeling, and concrete and outdoor structures across south Louisiana.',
+  },
+  {
+    question: 'What areas do you serve?',
+    answer:
+      'We are based in Raceland and work throughout Lafourche and Terrebonne parishes, including Thibodaux, Houma, Lockport, Larose, Cut Off, Galliano, Schriever, and Bayou Blue. If your town is not on that list, call us. We take on projects across south Louisiana.',
+  },
+  {
+    question: 'What is a FORTIFIED roof, and is it worth it in Louisiana?',
+    answer:
+      'A FORTIFIED Roof is a storm-resistance standard from the Insurance Institute for Business & Home Safety (IBHS) that adds a sealed roof deck, enhanced fastening, and locked-down edges. Foret Construction is FORTIFIED certified, and Louisiana requires insurers to offer premium discounts for homes with a certified FORTIFIED Roof, so the upgrade often pays for itself over time.',
+  },
+  {
+    question: 'Are estimates really free?',
+    answer:
+      'Yes. Every project starts with a free, no-obligation estimate. For roofing, that means an actual inspection of your roof, so the quote reflects what it needs instead of a guess from the driveway.',
+  },
+  {
+    question: 'Can you help with storm damage insurance claims?',
+    answer:
+      'We can inspect the damage, document it with photos, and meet your adjuster on the roof so nothing gets missed. We do not promise claim outcomes, but we make sure the damage is recorded properly and handle the work once the scope is set.',
+  },
+  {
+    question: 'Do you offer financing?',
+    answer:
+      'Yes. We partner with Enhancify to offer monthly payment plans on roofing and construction projects. Checking your options starts with a soft credit check that does not affect your score, and you can see real rates on our financing page before committing to anything.',
+  },
+  {
+    question: 'Do you handle small repairs or only full projects?',
+    answer:
+      'Both. Storm repairs and small roofing fixes are a regular part of our work, and on the construction side we build everything from screened patio additions to complete new homes. If you are not sure what your project needs, call and we will give you a straight answer.',
+  },
+  {
+    question: 'Who will I be working with?',
+    answer:
+      'Foret Construction & Roofing LLC is locally owned by Jacob Foret, born and raised in Raceland. You deal with the company directly from the first estimate to the final walkthrough, not a national call center, and our crews are known for leaving job sites cleaner than they found them.',
+  },
+  {
+    question: 'How do I get started?',
+    answer:
+      'Call (985) 859-5111 or send us a few details through the contact form. We will schedule a time to look at your project, talk through your options, and put a written estimate in your hands at no cost.',
+  },
 ]
 
 const schema = {
@@ -140,6 +188,8 @@ const schema = {
         'Bayou Blue, LA', 'Napoleonville, LA',
       ],
       sameAs: ['https://www.facebook.com/profile.php?id=100083615910445'],
+      founder: { '@id': 'https://www.foretconstruction.co/#jacob-foret' },
+      employee: { '@id': 'https://www.foretconstruction.co/#jacob-foret' },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Construction & Roofing Services',
@@ -159,6 +209,23 @@ const schema = {
       url: 'https://www.foretconstruction.co',
       name: 'Foret Construction & Roofing LLC',
       publisher: { '@id': 'https://www.foretconstruction.co/#business' },
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.foretconstruction.co/#jacob-foret',
+      name: 'Jacob Foret',
+      jobTitle: 'Owner',
+      worksFor: { '@id': 'https://www.foretconstruction.co/#business' },
+      homeLocation: { '@type': 'Place', name: 'Raceland, LA' },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.foretconstruction.co/#faq',
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
     },
   ],
 }
@@ -289,15 +356,6 @@ export default function HomePage() {
 
       {/* ── FORTIFIED HIGHLIGHT ─────────────────────────────────── */}
       <section className="relative section-padding bg-primary text-white overflow-hidden" aria-labelledby="fortified-heading">
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="/images/roofing-aerial-shingles-raceland.jpg"
-            alt=""
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-        </div>
         <div className="container-wide relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -309,7 +367,7 @@ export default function HomePage() {
                 Foret Construction & Roofing LLC is FORTIFIED certified by the Insurance Institute for Business & Home Safety (IBHS). A FORTIFIED Roof goes beyond standard installation &mdash; sealed roof deck, enhanced fastening, and locked-down edges that hold up when the next storm rolls through Lafourche Parish.
               </p>
               <p className="text-gray-300 leading-relaxed mb-8">
-                Most importantly, FORTIFIED roofs qualify for <strong className="text-accent">Louisiana wind & hail insurance discounts</strong>, often paying for the upgrade many times over.
+                Most importantly, FORTIFIED roofs qualify for <strong className="text-accent-light">Louisiana wind & hail insurance discounts</strong>, often paying for the upgrade many times over.
               </p>
               <Link href="/services/fortified-roof-raceland-la" className="btn-accent">
                 Learn About FORTIFIED Roofs
@@ -443,20 +501,54 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── CTA BANNER ──────────────────────────────────────────── */}
-      <section className="bg-primary section-padding relative overflow-hidden" aria-labelledby="cta-heading">
-        <div className="absolute inset-0 opacity-20">
-          <Image src="/images/new-construction-modern-white-brick.jpg" alt="" fill className="object-cover" sizes="100vw" />
+      {/* ── FAQ ─────────────────────────────────────────────────── */}
+      <section className="section-padding bg-white" aria-labelledby="faq-heading">
+        <div className="container-wide max-w-3xl">
+          <div className="text-center mb-10">
+            <p className="section-label">Common Questions</p>
+            <h2 id="faq-heading" className="text-3xl md:text-4xl font-bold text-primary mt-2">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="space-y-4">
+            {faqs.map((f) => (
+              <details
+                key={f.question}
+                className="group bg-gray-50 rounded-xl border border-gray-100 shadow-sm px-6 py-1 open:shadow-md"
+              >
+                <summary className="flex items-center justify-between gap-4 cursor-pointer list-none py-5 font-bold text-primary text-lg">
+                  <span>{f.question}</span>
+                  <svg
+                    className="w-5 h-5 text-accent shrink-0 transition-transform group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p className="text-gray-600 leading-relaxed pb-5 -mt-1">{f.answer}</p>
+              </details>
+            ))}
+          </div>
         </div>
-        <div className="container-wide text-center text-white relative">
+      </section>
+
+      {/* ── CTA BANNER ──────────────────────────────────────────── */}
+      <section className="bg-accent-dark section-padding" aria-labelledby="cta-heading">
+        <div className="container-wide text-center text-white">
           <h2 id="cta-heading" className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
             Ready to Start Your Project?
           </h2>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-red-100 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
             Free, no-obligation estimates across Raceland, Houma, Thibodaux, Lockport, Larose, Cut Off, Galliano, Schriever, Bayou Blue, and the rest of Lafourche &amp; Terrebonne parishes.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/contact" className="btn-accent text-base">
+            <Link
+              href="/contact"
+              className="bg-white text-primary hover:bg-gray-100 font-semibold px-6 py-3 rounded transition-colors duration-200 inline-block text-base"
+            >
               Request a Free Quote
             </Link>
             <a href="tel:+19858595111" className="btn-outline text-base">

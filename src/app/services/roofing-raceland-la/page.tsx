@@ -24,7 +24,7 @@ export default function Page() {
       state="LA"
       county="Lafourche Parish"
       surroundingCities={['Lockport', 'Larose', 'Cut Off', 'Galliano', 'Schriever', 'Bayou Blue', 'Thibodaux', 'Houma']}
-      heroImage="/images/roofing-aerial-shingles-raceland.jpg"
+      heroImage="/images/roof-replacement-complete-aerial-front.jpg"
       heroAlt="New architectural shingle roof installation in Raceland, LA by Foret Construction & Roofing LLC"
       metaTitle="Roofing Contractor in Raceland, LA"
       metaDescription="Roof replacement and repair in Raceland, LA."
@@ -58,7 +58,6 @@ export default function Page() {
         'Synthetic underlayment',
         'Architectural asphalt shingles or metal',
         'New flashing, drip edge, ridge vent',
-        'Manufacturer warranty + workmanship warranty',
         'Storm damage / insurance claim support',
         'FORTIFIED upgrade option available',
         'Magnetic nail sweep & full job site cleanup',

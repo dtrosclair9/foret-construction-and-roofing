@@ -35,6 +35,19 @@ export function buildFaqSchema(p: ServiceLandingProps) {
   }
 }
 
+export function buildBreadcrumbSchema(p: ServiceLandingProps) {
+  const pageUrl = `https://www.foretconstruction.co/services/${p.serviceSlug}-${p.city.toLowerCase().replace(/\s+/g, '-')}-${p.state.toLowerCase()}`
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.foretconstruction.co' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.foretconstruction.co/services' },
+      { '@type': 'ListItem', position: 3, name: `${p.service} in ${p.city}, ${p.state}`, item: pageUrl },
+    ],
+  }
+}
+
 export function buildServiceSchema(p: ServiceLandingProps) {
   return {
     '@context': 'https://schema.org',
@@ -69,12 +82,17 @@ export function buildServiceSchema(p: ServiceLandingProps) {
 export default function ServiceLandingPage(p: ServiceLandingProps) {
   const schema = buildServiceSchema(p)
   const faqSchema = buildFaqSchema(p)
+  const breadcrumbSchema = buildBreadcrumbSchema(p)
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {faqSchema && (
         <script
@@ -93,7 +111,7 @@ export default function ServiceLandingPage(p: ServiceLandingProps) {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/75 to-primary/30" />
         <div className="relative z-10 container-wide py-20 text-white">
           <p className="section-label text-accent-light mb-4">{p.city}, {p.state} &middot; {p.county}</p>
           <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] max-w-4xl uppercase tracking-tight">
