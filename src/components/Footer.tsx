@@ -130,6 +130,10 @@ export default function Footer() {
             </Link>
             <span className="text-gray-600" aria-hidden="true">&middot;</span>
             <p>Raceland, LA &middot; Serving Lafourche &amp; Terrebonne Parishes</p>
+            <span className="text-gray-600" aria-hidden="true">&middot;</span>
+            <a href="https://strykora.com" target="_blank" rel="noopener" className="hover:text-accent transition-colors">
+              Website by Strykora
+            </a>
           </div>
         </div>
       </div>
