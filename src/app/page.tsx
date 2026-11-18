@@ -120,9 +120,9 @@ const faqs = [
       'Yes. Every project starts with a free, no-obligation estimate. For roofing, that means an actual inspection of your roof, so the quote reflects what it needs instead of a guess from the driveway.',
   },
   {
-    question: 'Can you help with storm damage insurance claims?',
+    question: 'What do you do after storm damage?',
     answer:
-      'We can inspect the damage, document it with photos, and meet your adjuster on the roof so nothing gets missed. We do not promise claim outcomes, but we make sure the damage is recorded properly and handle the work once the scope is set.',
+      'We inspect the roof, photograph the damage, and give you a written assessment of what we found and what the repair involves, which you can keep for your records. Your claim is between you and your insurance company. Once you are ready, we do the repair.',
   },
   {
     question: 'Do you offer financing?',

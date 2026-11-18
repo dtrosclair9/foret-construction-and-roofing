@@ -39,8 +39,8 @@ export default function Page() {
           body: 'Foret Construction is FORTIFIED certified by the Insurance Institute for Business & Home Safety (IBHS). That means we can install roofs that meet the elevated FORTIFIED standard and unlock Louisiana wind & hail insurance discounts.',
         },
         {
-          title: 'Insurance Claim Support',
-          body: 'We are happy to meet your adjuster on the roof, document storm damage, and help walk the claim through. We have done it many times — for many homeowners across Raceland and the surrounding parishes.',
+          title: 'Storm Damage Documentation',
+          body: 'After a storm we inspect the roof, photograph the damage, and write up what we found and what the repair involves, so you have a clear record. Your claim is between you and your insurance company. We have done this for many homeowners across Raceland and the surrounding parishes.',
         },
         {
           title: 'Clean Job Sites',
@@ -58,7 +58,7 @@ export default function Page() {
         'Synthetic underlayment',
         'Architectural asphalt shingles or metal',
         'New flashing, drip edge, ridge vent',
-        'Storm damage / insurance claim support',
+        'Storm damage inspections and repairs',
         'FORTIFIED upgrade option available',
         'Magnetic nail sweep & full job site cleanup',
       ]}
@@ -74,9 +74,9 @@ export default function Page() {
             'We install architectural asphalt shingles, metal roofing, and full IBHS FORTIFIED roof systems. Asphalt shingles are the most common choice in Raceland for cost and looks; metal lasts longer and sheds water fast; FORTIFIED is the choice when storm resilience and insurance discounts are the priority. We help you weigh the trade-offs for your home.',
         },
         {
-          question: 'Can you help with a storm damage insurance claim?',
+          question: 'What happens if a storm damages my roof?',
           answer:
-            'We can document the damage and provide the assessment and photos you need for your claim, and work within your adjuster’s scope during the repair. We do not file the claim for you or promise a specific outcome, but we make sure the damage is properly documented so nothing gets missed. Call us and we will explain the process.',
+            'Call us and we will come inspect it. We photograph the damage and give you a written assessment of what we found and what the repair involves. Your claim is between you and your insurance company. When you are ready, we do the repair.',
         },
         {
           question: 'Do you offer FORTIFIED roofing in Raceland?',

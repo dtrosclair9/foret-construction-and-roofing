@@ -50,7 +50,7 @@ const services = [
       'Architectural asphalt shingles',
       'Metal roofing systems',
       'Storm damage repairs',
-      'Insurance claim support',
+      'Storm damage inspections and photo documentation',
       'Clean job sites every time',
       'Quick turnaround',
     ],
