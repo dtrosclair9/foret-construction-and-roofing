@@ -263,12 +263,16 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40" />
         <div className="relative z-10 container-wide py-24 text-white">
           <p className="section-label text-accent-light mb-4">Raceland, Louisiana &middot; Lafourche Parish</p>
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] max-w-4xl uppercase tracking-tight">
+          {/* The slogan stays the big visual line; the H1 carries the services and town (audit 2026-11-19). */}
+          <p className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] max-w-4xl uppercase tracking-tight">
             Built Right.<br />
             <span className="text-accent">Built to Last.</span>
+          </p>
+          <h1 className="mt-5 font-serif text-xl md:text-2xl font-bold uppercase tracking-wide text-white max-w-3xl">
+            Roofing &amp; New Home Construction in Raceland, LA
           </h1>
-          <p className="mt-7 text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed">
-            Foret Construction & Roofing LLC is a locally owned general contractor and FORTIFIED-certified roofer serving Raceland, Houma, Thibodaux, and the surrounding parishes. New homes, roofs that hold up to hurricane country, and additions tied in seamlessly &mdash; all with a clean job site and a name you&apos;ll know.
+          <p className="mt-5 text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed">
+            Foret Construction &amp; Roofing LLC is a locally owned general contractor and FORTIFIED-certified roofer serving Raceland, Houma, Thibodaux and the surrounding parishes. We build new homes, put on roofs made for hurricane country, and build additions, and we keep the job site clean.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link href="/contact" className="btn-accent text-base">

@@ -91,7 +91,7 @@ export default function AboutPage() {
         <div className="container-wide">
           <p className="section-label text-accent-light">Our Story</p>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 uppercase tracking-tight">
-            About Foret Construction & Roofing LLC
+            About Foret Construction &amp; Roofing in Raceland, LA
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
             A locally owned, FORTIFIED-certified general contractor built on hard work, honest relationships, and a love for the craft.

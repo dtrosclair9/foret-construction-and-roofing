@@ -57,9 +57,10 @@ export default function Header() {
             <Image
               src="/images/logo.jpg"
               alt="Foret Construction & Roofing LLC logo"
-              width={64}
-              height={64}
-              className="h-14 w-14 object-contain"
+              width={80}
+              height={80}
+              sizes="80px"
+              className="h-16 w-16 sm:h-[72px] sm:w-[72px] object-contain"
               priority
             />
             <span className="text-white font-serif font-bold text-base sm:text-lg leading-tight hidden sm:block">
@@ -81,7 +82,7 @@ export default function Header() {
                   <Link
                     href={link.href}
                     className={`text-sm font-medium transition-colors duration-200 inline-flex items-center gap-1 ${
-                      pathname.startsWith('/services') ? 'text-accent' : 'text-gray-200 hover:text-accent'
+                      pathname.startsWith('/services') ? 'text-accent-light' : 'text-gray-200 hover:text-accent-light'
                     }`}
                     aria-haspopup="true"
                     aria-expanded={servicesOpen}
@@ -114,7 +115,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   className={`text-sm font-medium transition-colors duration-200 ${
-                    pathname === link.href ? 'text-accent' : 'text-gray-200 hover:text-accent'
+                    pathname === link.href ? 'text-accent-light' : 'text-gray-200 hover:text-accent-light'
                   }`}
                 >
                   {link.label}
@@ -161,7 +162,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   className={`px-2 py-2.5 text-sm font-medium rounded transition-colors ${
-                    pathname === link.href ? 'text-accent' : 'text-gray-200 hover:text-accent'
+                    pathname === link.href ? 'text-accent-light' : 'text-gray-200 hover:text-accent-light'
                   }`}
                 >
                   {link.label}

@@ -45,7 +45,7 @@ export default function GalleryPage() {
         <div className="container-wide">
           <p className="section-label text-accent-light">Our Portfolio</p>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 uppercase tracking-tight">
-            Project Gallery
+            Roofing &amp; Construction Projects Around Raceland, LA
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
             Real projects from real homeowners across Lafourche and Terrebonne parishes. Every photo is work we&apos;re proud to stand behind.

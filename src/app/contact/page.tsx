@@ -51,7 +51,7 @@ export default function ContactPage() {
         <div className="container-wide">
           <p className="section-label text-accent-light">Get in Touch</p>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 uppercase tracking-tight">
-            Contact Foret Construction
+            Contact Foret Construction in Raceland, LA
           </h1>
           <p className="text-gray-300 text-lg max-w-xl mx-auto">
             Ready to start your project? Reach out for a free, no-obligation estimate. Jacob will get back to you promptly.
@@ -157,6 +157,7 @@ export default function ContactPage() {
               <h2 id="contact-form-heading" className="text-2xl md:text-3xl font-bold text-primary mb-6">
                 Send Us a Message
               </h2>
+              <p className="-mt-3 mb-6 text-gray-600">Tell us about the job and where it is, and we will get back to you.</p>
               <ContactForm />
             </div>
           </div>
